@@ -1,0 +1,15 @@
+<DOCTYPE! html>
+<html>
+<head>
+</head>
+
+<body>
+<h1>Apartment List</h1>
+<ul>
+    <% @apartments.each do |apartment| %>
+        <li><a href= "/edit_/<%= apartment.id %>"> <%=apartment.name%> </a></li>
+    <%end%>
+</ul>
+</body>
+
+</html>

@@ -41,25 +41,25 @@ seed data by running `rake db:seed`.
 > You do not have to follow any specific convention for the routes (verbs and paths), nor the views, in this lab. It may be helpful to write a list of the routes and views you'll need before you begin.
 
 **A user should be able to:**
-* Edit a tennant
-    * Change the name of the tennant
-    * Change the apartment the tennant lives in
+* Edit a tenant
+    * Change the name of the tenant
+    * Change the apartment the tenant lives in
 * See the details of a specific apartment
     * See the apartment's address
-    * See a list of the tennants living in the apartment
+    * See a list of the tenants living in the apartment
     * NOTE: You will need an ID in the path for this page!
-* See a list of all tennants 
-    * Click on a tennant to go to the tennants edit page
+* See a list of all tenants 
+    * Click on a tenant to go to the tennants edit page
 * See a list of all apartments
     * Click on a apartment to go to the apartment details page
 * Create a new apartment
     * With it's address
     * After creating the apartment, send the user to see the list of all apartments
-* Create a new tennant
+* Create a new tenant
     * With their name
     * After creating the tennant, send the user to see the list of all tennants
 * Delete an apartment
     * Then send the user to see the list of all apartments
-* Delete a tennant
-    * Then send the user to see the list of all tennants
+* Delete a tenant
+    * Then send the user to see the list of all tenants
 * Navigate your application using links instead of typing in the URL bar

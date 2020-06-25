@@ -1,0 +1,15 @@
+<DOCTYPE! html>
+<html>
+<head>
+</head>
+
+<body>
+<h1>Tenants</h1>
+<ul>
+    <% @tenants.each do |tenant| %>
+        <li><a href= "/edit_tenant/<%= tenant.id %>"> <%=tenant.name%> </a></li>
+    <%end%>
+</ul>
+</body>
+
+</html>

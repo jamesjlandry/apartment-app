@@ -1,0 +1,26 @@
+<DOCTYPE! html>
+<html>
+    <head>
+    </head>
+
+    <body>
+    <div>
+        <h1>Tenant Info</h1>
+     <p>Current Tenant: <%=@tenant.name%></p>
+     
+    </div>
+    <div>
+        <form method="POST" action="/edit_tenant/<%= @tenant.id %>">
+            <p>New name: <input type="text" name="tenant_name"></p>
+            <p>New address: <select name= "apartment_address"> 
+                <% @apartments.each do |apartment| %>
+               <option value = "<%=apartment.id%>" ><%= apartment.address%></option></p>
+               <%end%></select>
+            <input type="submit">
+         
+
+        </form>
+    </div>
+
+    </body>
+</html>
