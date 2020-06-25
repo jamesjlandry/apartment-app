@@ -7,7 +7,7 @@
 <h1>Apartment List</h1>
 <ul>
     <% @apartments.each do |apartment| %>
-        <li><a href= "/edit_/<%= apartment.id %>"> <%=apartment.name%> </a></li>
+        <li><a href= "/apartment-details/<%= apartment.id %>"> <%=apartment.address%> </a></li>
     <%end%>
 </ul>
 </body>

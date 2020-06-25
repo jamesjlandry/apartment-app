@@ -1,0 +1,27 @@
+<DOCTYPE! html>
+<html>
+    <head>
+    </head>
+
+    <body>
+    <div>
+        <h1>Apartment Info</h1>
+        <p> Address: <%= @apartment.address%></p>
+        <p>Current Tenants:</p>
+        <ul> <% @tenants.each do |tenant| %>
+           
+                <% if tenant.apartment_id == params[:id].to_i %>
+                    <li><%= tenant.name %></li>
+                <% end %>
+        
+        <%end%></ul>
+    </div>
+    <div>
+    <h4> Delete this apartment with a bazooka</h4>
+    <form method="POST" action="/apartment-details/<%= @apartment.id %>">
+    <input id="hidden" type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Destroy">
+    </div>
+
+    </body>
+</html>
